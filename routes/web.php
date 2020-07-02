@@ -18,5 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('/contact', function () {
-    return 'Contact Us.';
+    $name = "<h1>Yemima Sutanto</h1>";
+    $post = "lorem ipsum dolor
+    sit ame lorem ipsum
+    dolor sit ame.";
+    return view('contact', ['name'=>$name, 'post'=>$post]);
 });
